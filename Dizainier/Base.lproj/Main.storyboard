@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="MvJ-Xg-afm">
+                                <rect key="frame" x="14" y="227" width="572" height="31"/>
+                                <connections>
+                                    <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="eC2-eC-3vE"/>
+                                </connections>
+                            </slider>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="aV7-qq-8oB">
+                                <rect key="frame" x="16" y="28" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepperHgAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="sph-QD-ecz"/>
+                                </connections>
+                            </stepper>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dc8-kq-LA6">
+                                <rect key="frame" x="535" y="28" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchHdAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="t4w-gl-uoC"/>
+                                </connections>
+                            </switch>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qrj-jb-PPS">
+                                <rect key="frame" x="16" y="94" width="568" height="29"/>
+                                <segments>
+                                    <segment title="0"/>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="5"/>
+                                    <segment title="6"/>
+                                    <segment title="7"/>
+                                    <segment title="8"/>
+                                    <segment title="9"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segCtrlDizAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="t5e-Pq-A0C"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Y2E-G9-Z7Z">
+                                <rect key="frame" x="16" y="159" width="568" height="29"/>
+                                <segments>
+                                    <segment title="0"/>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="5"/>
+                                    <segment title="6"/>
+                                    <segment title="7"/>
+                                    <segment title="8"/>
+                                    <segment title="9"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segCtrlUnitAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="sJC-JZ-AHa"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dizaines" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYY-EG-7u4">
+                                <rect key="frame" x="16" y="65" width="65" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unités" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogb-aZ-pLn">
+                                <rect key="frame" x="16" y="130" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EqK-v6-OCY">
+                                <rect key="frame" x="285" y="265" width="30" height="30"/>
+                                <state key="normal" title="RaZ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="razAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qsX-3J-gS3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mode «geek»" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RwK-K0-8Kz">
+                                <rect key="frame" x="425" y="33" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCo-KB-guZ">
+                                <rect key="frame" x="285" y="195" width="59" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="mis-3b-rjI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RwK-K0-8Kz" firstAttribute="centerY" secondItem="dc8-kq-LA6" secondAttribute="centerY" id="0Ek-Ar-cne"/>
+                            <constraint firstItem="MvJ-Xg-afm" firstAttribute="leading" secondItem="Y2E-G9-Z7Z" secondAttribute="leading" id="CcD-rI-KU2"/>
+                            <constraint firstItem="gYY-EG-7u4" firstAttribute="top" secondItem="aV7-qq-8oB" secondAttribute="bottom" constant="8" symbolic="YES" id="Hb2-Rf-KXD"/>
+                            <constraint firstItem="ogb-aZ-pLn" firstAttribute="top" secondItem="qrj-jb-PPS" secondAttribute="bottom" constant="8" symbolic="YES" id="JMD-Nn-ygZ"/>
+                            <constraint firstItem="qrj-jb-PPS" firstAttribute="leading" secondItem="ogb-aZ-pLn" secondAttribute="leading" id="N4H-ae-0aB"/>
+                            <constraint firstItem="Y2E-G9-Z7Z" firstAttribute="trailing" secondItem="MvJ-Xg-afm" secondAttribute="trailing" id="PO5-Mi-13F"/>
+                            <constraint firstItem="qrj-jb-PPS" firstAttribute="trailing" secondItem="Y2E-G9-Z7Z" secondAttribute="trailing" id="Pt5-t9-BT0"/>
+                            <constraint firstItem="EqK-v6-OCY" firstAttribute="top" secondItem="MvJ-Xg-afm" secondAttribute="bottom" constant="8" symbolic="YES" id="RWB-hg-t1f"/>
+                            <constraint firstItem="CCo-KB-guZ" firstAttribute="leading" secondItem="EqK-v6-OCY" secondAttribute="leading" id="Unu-Q0-2oo"/>
+                            <constraint firstItem="EqK-v6-OCY" firstAttribute="centerX" secondItem="MvJ-Xg-afm" secondAttribute="centerX" id="XLb-dl-axd"/>
+                            <constraint firstItem="qrj-jb-PPS" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="YK6-g5-L5J"/>
+                            <constraint firstItem="Y2E-G9-Z7Z" firstAttribute="top" secondItem="ogb-aZ-pLn" secondAttribute="bottom" constant="8" symbolic="YES" id="gKy-gi-K8m"/>
+                            <constraint firstItem="gYY-EG-7u4" firstAttribute="leading" secondItem="aV7-qq-8oB" secondAttribute="leading" id="hrT-lB-jpw"/>
+                            <constraint firstItem="MvJ-Xg-afm" firstAttribute="top" secondItem="CCo-KB-guZ" secondAttribute="bottom" constant="8" symbolic="YES" id="ibg-dN-gp7"/>
+                            <constraint firstItem="aV7-qq-8oB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="la1-52-WHN"/>
+                            <constraint firstItem="dc8-kq-LA6" firstAttribute="top" secondItem="aV7-qq-8oB" secondAttribute="top" id="nDj-e5-gDt"/>
+                            <constraint firstItem="qrj-jb-PPS" firstAttribute="leading" secondItem="gYY-EG-7u4" secondAttribute="leading" id="nyY-Vk-luz"/>
+                            <constraint firstItem="qrj-jb-PPS" firstAttribute="top" secondItem="gYY-EG-7u4" secondAttribute="bottom" constant="8" symbolic="YES" id="pYF-Ku-LSY"/>
+                            <constraint firstItem="qrj-jb-PPS" firstAttribute="trailing" secondItem="dc8-kq-LA6" secondAttribute="trailing" id="pvv-ka-JAL"/>
+                            <constraint firstItem="CCo-KB-guZ" firstAttribute="top" secondItem="Y2E-G9-Z7Z" secondAttribute="bottom" constant="8" symbolic="YES" id="tyW-rP-A06"/>
+                            <constraint firstItem="dc8-kq-LA6" firstAttribute="leading" secondItem="RwK-K0-8Kz" secondAttribute="trailing" constant="8" symbolic="YES" id="vOL-Jt-QU3"/>
+                            <constraint firstItem="gYY-EG-7u4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vuE-Ci-AM5"/>
+                            <constraint firstItem="ogb-aZ-pLn" firstAttribute="leading" secondItem="Y2E-G9-Z7Z" secondAttribute="leading" id="zxg-Qe-dKX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="numberLabel" destination="CCo-KB-guZ" id="oSU-fw-ZBd"/>
+                        <outlet property="segCtrlDizName" destination="qrj-jb-PPS" id="Jej-mQ-uQN"/>
+                        <outlet property="segCtrlUnitName" destination="Y2E-G9-Z7Z" id="awh-1G-AGP"/>
+                        <outlet property="sliderName" destination="MvJ-Xg-afm" id="XRC-83-nw2"/>
+                        <outlet property="strepperHgName" destination="aV7-qq-8oB" id="pNq-wd-oo5"/>
+                        <outlet property="switchHdName" destination="dc8-kq-LA6" id="md8-gS-aME"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
